@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background: url(fondo.png) no-repeat center;
+    background: url(img/fondo.png) no-repeat center;
     background-size: cover;
     font-family: 'Carter One', Arial, Helvetica, sans-serif;
     min-height: 100vh;

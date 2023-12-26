@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
 <title>Iniciando Sesion</title>
-<link rel="stylesheet" type="text/css" href="estilo.css">
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 	<body>
 		<section>
 			<article>
 				<main>
 			       <?php
-						include_once "usuario.class.php";
+						include_once "clases/usuario.class.php";
 						session_start();
 
 						if (isset($_POST['submit'])) {

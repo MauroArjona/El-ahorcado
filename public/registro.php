@@ -5,14 +5,14 @@ $nombre = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : '';
 $correo = isset($_SESSION['correo']) ? $_SESSION['correo'] : '';
 $fechaNacimiento = isset($_SESSION['fechaNacimiento']) ? $_SESSION['fechaNacimiento'] : '';
 $paisResidencia = isset($_SESSION['paisResidencia']) ? $_SESSION['paisResidencia'] : '';
-include_once "usuario.class.php";
+include_once "clases/usuario.class.php";
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <title>Registrando Usuario</title>
-<link rel="stylesheet" type="text/css" href="estilo.css">
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
 	<section>

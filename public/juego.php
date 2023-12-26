@@ -11,7 +11,7 @@ if(isset($_SESSION['juego.php'])){?>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="juegoEstilo.css">
+<link rel="stylesheet" href="css/juegoEstilo.css">
  <script src="funciones.js"></script>
 </head>
 	<body>
@@ -22,7 +22,7 @@ if(isset($_SESSION['juego.php'])){?>
 				</header>	
 				<div id="reloj"></div>
 					<main>
-						<img id="imagen" src="img0.png" alt="Ahorcado" />
+						<img id="imagen" src="img/img0.png" alt="Ahorcado" />
 						<div>
 							<p id="palabra_a_adivinar">
 							</p>

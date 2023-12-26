@@ -6,7 +6,7 @@ if(isset($_SESSION['mostrarRankingPersonal'])){
 <html lang="es">
 <head>
 <title>Mostrar ranking personal</title>
-<link rel="stylesheet" type="text/css" href="estilo.css">
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
 	<section>

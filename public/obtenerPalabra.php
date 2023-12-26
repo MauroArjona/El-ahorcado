@@ -1,5 +1,5 @@
 <?php
-include_once("palabra.class.php");
+include_once("clases/palabra.class.php");
 $dificultad = $_GET['dificultad'];
 $palabra = palabra::obtenerPalabra($dificultad);
 

@@ -6,7 +6,7 @@ if(isset($_SESSION['mostrarRankingJugadores.php'])){ ?>
 <html lang="es">
 <head>
 <title>Mostrar ranking jugadores</title>
-<link rel="stylesheet" type="text/css" href="estilo.css">
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
 	<section>

@@ -5,7 +5,7 @@ if(isset($_SESSION['mostrarPartidas'])){ ?>
 <html lang="es">
 <head>
 <title>Mostrar Partidas</title>
-<link rel="stylesheet" type="text/css" href="estilo.css">
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 	<body>
 		<section>

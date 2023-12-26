@@ -5,7 +5,7 @@ if(isset($_SESSION['paginaInicial'])){?>
 <html lang="es">
 <head>
 <title>Pagina inicio</title>
-<link rel="stylesheet" type="text/css" href="estilo.css">
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 	<body>
 		<section>

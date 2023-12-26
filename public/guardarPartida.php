@@ -8,7 +8,7 @@ $cant_errores = $_GET['cant_errores'];
 $letrasAcertadas = $_GET['letrasAcertadas'];
 $letrasErradas = $_GET['letrasErradas'];
 
-require_once 'partida.class.php';
+require_once 'clases/partida.class.php';
 $partida = new Partida();
 
 // Establecer las propiedades de la partida

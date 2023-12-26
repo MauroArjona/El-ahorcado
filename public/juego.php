@@ -12,7 +12,7 @@ if(isset($_SESSION['juego.php'])){?>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/juegoEstilo.css">
- <script src="funciones.js"></script>
+ <script src="js/funciones.js"></script>
 </head>
 	<body>
 		<section>
@@ -77,12 +77,12 @@ if(isset($_SESSION['juego.php'])){?>
 					</main>
 			</article>
 		</section>
-		    <script  src="juego.js"></script>
+		    <script  src="js/juego.js"></script>
 	</body>
 </html>
 <?php
 }else{
 	echo "No tienes permiso para acceder a esta pagina inicie sesion primero";
-	header("refresh:3;url=index.php");
+	header("refresh:3;url=../index.php");
 }
 ?>

@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
 <title>Iniciando Sesion</title>
-<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<link rel="stylesheet" type="text/css" href="public/css/estilo.css">
 </head>
 	<body>
 		<section>
 			<article>
 				<main>
 			       <?php
-						include_once "clases/usuario.class.php";
+						include_once "public/clases/usuario.class.php";
 						session_start();
 
 						if (isset($_POST['submit'])) {
@@ -26,7 +26,7 @@
 									// Inicio de sesión exitoso, redirigir a la página deseada
 									unset($_SESSION['nombreUsuario']);
 									$_SESSION['paginaInicial'] = true;
-									header("Location: paginaInicial.php");
+									header("Location: public/paginaInicial.php");
 									exit();
 								} else {
 									// Datos de inicio de sesión incorrectos, mostrar mensaje de error
@@ -58,7 +58,7 @@
 								<label for="contrasena">Contraseña:</label>
 								<input id="contrasena" name="Contrasena" type="password" required>
 								<button class="boton" type="submit" id="idIniciarSesion" name="submit">Iniciar Sesion</button>
-								 <p>¿No tienes una cuenta? <a href="registro.php?registrarse">Registrarse</a></p>
+								 <p>¿No tienes una cuenta? <a href="public/registro.php?registrarse">Registrarse</a></p>
 							</div>
 					   </form>  
 					</main>

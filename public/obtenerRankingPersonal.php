@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'ranking.class.php';
+require_once 'clases/ranking.class.php';
 $idUsuario = $_SESSION['idUsuario'];
 $ranking = new ranking();
 $estadistica = $ranking->obtenerEstadisticaPersonal($idUsuario);

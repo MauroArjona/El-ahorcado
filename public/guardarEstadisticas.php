@@ -5,7 +5,7 @@ $idUsuario = $_SESSION['idUsuario'];
 $palabrita = $_GET['palabrita'];
 $tiempoTranscurrido = $_GET['tiempoTranscurrido'];
 
-require_once 'ranking.class.php';
+require_once 'clases/ranking.class.php';
 $ranking = new ranking();
 
 // Establecer las propiedades de la partida

@@ -1,5 +1,5 @@
 <?php
-require_once 'ranking.class.php';
+require_once 'clases/ranking.class.php';
 $ranking = new ranking();
 // Obtener las estadísticas
 $estadisticas = $ranking->obtenerEstadisticas();

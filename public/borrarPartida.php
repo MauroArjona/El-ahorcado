@@ -1,7 +1,7 @@
 <?php
 // Obtener los datos enviados por URL
 $idPartida = $_GET['idPartida'];
-require_once 'partida.class.php';
+require_once 'clases/partida.class.php';
 $partida = new Partida();
 
 $resultado = $partida->eliminarPartida($idPartida);

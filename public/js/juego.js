@@ -64,7 +64,7 @@ function probar(){
       }else {
 		  id('resultado').innerHTML = "Perdiste, la palabra era " + palabrita;
 		  cant_errores = 10;
-		  const source = `img${cant_errores}.png` ;
+		  const source = `img/img${cant_errores}.png` ;
           imagen.src = source;
 	  }
 	  
@@ -84,7 +84,7 @@ btnRendirse.addEventListener('click', rendirse);
 function rendirse(){
    id('resultado').innerHTML ="Te rendiste!!, la palabra era " + palabrita;
 		cant_errores = 10;
-		const source = `img${cant_errores}.png` ;
+		const source = `img/img${cant_errores}.png` ;
         imagen.src = source;
 		bandera = true;
 		terminoPartida = true;
@@ -115,7 +115,7 @@ function iniciar(event){
 		var letrasArray = letrasAcertadas.replace(/\s/g, '').split(',');
 		var cantidadLetras = letrasArray.filter(letra => letra !== '').length;
 		console.log("letra acertada array"+cantidadLetras);
-		imagen.src = 'img' + globalCantErrores + '.png'; //cargo la imagen en la que se quedo
+		imagen.src = 'img/img' + globalCantErrores + '.png'; //cargo la imagen en la que se quedo
 		cant_errores = globalCantErrores; // cargo los errore que tuvo
 		cant_aciertos = cantidadLetras;  // cargo los aciertos que tuvo
 		palabrita = globalPalabra;  // cargo la palabra que tenia que adivinar
@@ -130,7 +130,7 @@ function iniciar(event){
 		
 	}else{
 		//inicia una partida nueva "no toco continuar partida"
-		imagen.src = 'img0.png';
+		imagen.src = 'img/img0.png';
 		cant_errores = 0;
 		cant_aciertos = 0; 
 		tiempoTranscurrido = 0;  
@@ -235,7 +235,7 @@ function click_letras(event){
     if( acerto == false ){
 		letrasErradas+=letra+",";
         cant_errores++;
-        const source = `img${cant_errores}.png` ;
+        const source = `img/img${cant_errores}.png` ;
         imagen.src = source;
     }
 

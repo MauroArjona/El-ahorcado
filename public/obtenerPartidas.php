@@ -2,7 +2,7 @@
 session_start();
 // Obtener los datos enviados por URL
 $idUsuario = $_SESSION['idUsuario']; 
-require_once 'partida.class.php';
+require_once 'clases/partida.class.php';
 $partida = new Partida();
 $partidas = $partida->obtenerPartidas($idUsuario);
 

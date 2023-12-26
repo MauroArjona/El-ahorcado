@@ -81,6 +81,6 @@ if(isset($_SESSION['mostrarRankingJugadores.php'])){ ?>
 <?php
 }else{
 	echo "No tienes permiso para acceder a esta pagina inicie sesion primero";
-	header("refresh:3;url=index.php");
+	header("refresh:3;url=../index.php");
 }
 ?>

@@ -1,0 +1,225 @@
+body{
+  margin: 0;
+  background: url(ahorcado.png) no-repeat center;
+  background-size: cover;
+  font-family: 'Carter One', Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: rgba(128,128,128,.4);
+  display: flex;
+  gap: 30px;
+}
+
+
+.grupo {
+display: flex;
+flex-direction: column;
+
+}
+
+.grupo div {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+text-align:center;
+
+}
+
+label {
+width: 200px; 
+margin-right: 10px;
+
+}
+
+#idformu , #idformu1 {
+  font-size: 19px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  padding:20px;
+  background: rgba(128,128,128,.4);
+}
+.boton{
+font-size: 16px;
+margin-top:20px;
+margin:0 auto;
+width:120px;
+background: rgba(200,200,200,.9);
+
+}
+button:hover {
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+transform: scale(1.1);
+transition: transform 0.3s ease; 
+background-color: white; 
+}
+
+h2,p{
+text-align: center;
+}
+
+h1 {
+text-align: center;
+font-size: 30px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: bold;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
+letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+
+p{
+color:white;		
+}
+
+span{
+text-align: center;
+font-size: 30px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: bold;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
+letter-spacing: 1px;
+font-size: 20px;
+color:white;
+font-size:smaller;
+font-weight:bold;
+}
+.contenedorError {
+color: red;
+text-align: center;
+background: rgba(85, 43, 43, 0.742);
+}
+.contenedorRegistro {
+color: rgb(0, 255, 153);
+text-align: center;
+background: rgba(128, 128, 128, 0.9);
+}
+.contenedor{
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  padding:20px;
+  background-color:#008080;
+  background: rgba(128,128,128,.5);
+}
+
+/**tabla de ranking personal y mostrar partidas guardadas*/
+.estilo-tabla{
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  padding:20px;
+  background-color:#008080;
+  background: rgba(128,128,128,.5);
+}
+.estilo-tabla th, .estilo-tabla td {
+  border: 1PX SOLID #ddd;
+  padding: 8px; 
+  text-align: center;
+}
+
+/*tabla de ranking de todos los jugadores*/
+.table-container {
+width: 100%;
+max-height: 450px;
+max-width: 450px;
+margin: auto; 
+overflow-y: auto;
+}
+
+.borde {
+width: 100%;
+border-collapse: collapse;
+table-layout: fixed; 
+}
+
+.borde thead {
+display: table;
+width: 100%;
+}
+
+.borde tbody {
+display: block;
+overflow-y: auto;
+max-height: 300px;
+}
+
+.borde th {
+position: sticky; /* Hace que th sea pegajoso */
+top: 0; /* Alinea th con la parte superior del contenedor de la tabla */
+background: white; /* Asegura que th no sea transparente */
+border: none;
+}
+
+.borde th, .borde td {
+width: 33%; /* Asegura que cada celda ocupe un tercio de la tabla */
+border: none;
+padding: 10px;
+text-align: center;
+background: rgba(63, 79, 95, 0.196);
+}
+
+.borde tr:hover {
+background-color: #9d9d9da7;
+}
+.borde th:nth-child(1), .borde td:nth-child(1) {
+width: 20%; /* Ajusta el ancho de la primera columna */
+text-align: left; /* Alinea el texto a la derecha en la primera columna */
+}
+
+.borde th:nth-child(2), .borde td:nth-child(2) {
+width: 50%; /* Ajusta el ancho de la segunda columna */
+text-align: center; /* Alinea el texto a la izquierda en la segunda columna */
+}
+
+.borde th:nth-child(3), .borde td:nth-child(3) {
+width: 30%; /* Ajusta el ancho de la tercera columna */
+text-align: center; /* Alinea el texto al centro en la tercera columna */
+}
+#titulo , td{
+color:white;
+}
+button , .boton {
+margin-top: 5px;
+font-size: 16px;
+}
+.encabezado {
+font-weight: bold;
+color: #80BEBE;
+}
+a:hover {
+color: #8CC2F7; 
+text-decoration: underline; 
+transition: text-decoration 0.3s ease;
+}
+select {
+transition: all 0.9s ease; 
+}
+select option {
+background-color: #C9CECE;
+color: black;
+padding: 5px;
+}
+select:focus {
+background-color: #C9CECE;
+color: #096370; 
+}
+input, select, textarea {
+font-size: 18px; 
+width: 100%; 
+text-align: center;
+}
+span.atencion{
+color: rgb(10, 10, 10);
+background: rgba(153, 159, 189, 0.5);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bold;
+}
+
+
+

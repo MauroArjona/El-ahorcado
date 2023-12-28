@@ -1,4 +1,6 @@
 <?php
+require_once 'config.php';
+
 class usuario {
 	
 	private $idUsuario;
@@ -63,8 +65,7 @@ class usuario {
 	 
 	public function RegistrarUsuario() {
 		session_start();
-		$conexion = new mysqli("localhost", "root", "1234", "ahorcado") or die("No es posible conectarse al motor de BD");
-
+		$conexion = conectarBD();
 		$nombre = $conexion->real_escape_string($this->nombre);
 		$correo = $conexion->real_escape_string($this->correo);
 		$contrasena = $conexion->real_escape_string($this->contrasena);
@@ -120,7 +121,7 @@ class usuario {
 	}
 
 		public static function VerificarUsuario($nombre, $contrasena) {
-		$conexion = new mysqli("localhost", "root", "1234", "ahorcado") or die("No es posible conectarse al motor de BD");
+		$conexion = conectarBD();
 		$nombre = $conexion->real_escape_string($nombre);
 		$consulta = "SELECT * FROM usuario WHERE nombre = '$nombre'";
 		$listado = $conexion->query($consulta) or die("No se pudo realizar la consulta");

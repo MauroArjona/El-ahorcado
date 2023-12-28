@@ -1,4 +1,6 @@
 <?php
+require_once 'config.php';
+
 class palabra {
 	
 	private $palabra;
@@ -26,9 +28,9 @@ class palabra {
 		$this->dificultad = $dificultad;
 	}
 
-
+	
 	public static function obtenerPalabra($dificultad) {
-		$conexion = new mysqli("localhost", "root", "1234", "ahorcado") or die("No es posible conectarse al motor de BD");
+		$conexion = conectarBD();
 		$consulta = "SELECT * FROM palabras WHERE palabras.nivelDificultad = '$dificultad'";
 		$listado = $conexion->query($consulta) or die("No se pudo realizar la consulta");
 		$palabras = array();

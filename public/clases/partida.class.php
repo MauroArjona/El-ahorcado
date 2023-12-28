@@ -1,4 +1,6 @@
 <?php
+require_once 'config.php';
+
 class partida {
 	
 	private $idPartida;
@@ -72,8 +74,7 @@ class partida {
 
 	 
 	public function RegistrarPartida() {
-    $conexion = new mysqli("localhost", "root", "1234", "ahorcado") or die("No es posible conectarse al motor de BD");
-
+	$conexion = conectarBD();
     $idUsuario = $conexion->real_escape_string($this->idUsuario);
     $palabra = $conexion->real_escape_string($this->palabra);
     $tiempo = $conexion->real_escape_string($this->tiempo);
@@ -97,7 +98,7 @@ class partida {
 }
 
 	 public static function obtenerPartidas($idUsuario) {
-		$conexion = new mysqli("localhost", "root", "1234", "ahorcado") or die("No es posible conectarse al motor de BD");
+		$conexion = conectarBD();
 		$consulta = "SELECT * FROM partida WHERE partida.idUsuario = ".$idUsuario;
 		$listado = $conexion->query($consulta) or die("No se pudo realizar la consulta");
 		$partidas = array();
@@ -127,7 +128,7 @@ class partida {
 	}
 	
 	public function actualizarPartida() {
-		$conexion = new mysqli("localhost", "root", "1234", "ahorcado") or die("No es posible conectarse al motor de BD");
+		$conexion = conectarBD();
 
 		$idPartida = $conexion->real_escape_string($this->idPartida);
 		$palabra = $conexion->real_escape_string($this->palabra);
@@ -151,7 +152,7 @@ class partida {
    }
 
 	public function eliminarPartida($idPartida) {
-		$conexion = new mysqli("localhost", "root", "1234", "ahorcado") or die("No es posible conectarse al motor de BD");
+		$conexion = conectarBD();
 
 		$idPartida = $conexion->real_escape_string($idPartida);
 		$consulta = "DELETE FROM partida WHERE idPartida =" .$idPartida;

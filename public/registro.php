@@ -63,7 +63,7 @@ include_once "clases/usuario.class.php";
 							unset($_SESSION['fechaNacimiento']);
 							unset($_SESSION['correo']);
 							unset($_SESSION['paisResidencia']);
-							header("Location: ../index.php");
+							header("Location: index.php");
 							exit();
 						} else {
 							header("Location: registro.php");

@@ -1,4 +1,6 @@
 <?php
+require_once 'config.php';
+
 class ranking {
 	
 	private $idUsuario;
@@ -69,8 +71,7 @@ class ranking {
 	}
 	
 	    public function registrarEstadistica() {
-        $conexion = new mysqli("localhost", "root", "1234", "ahorcado") or die("No es posible conectarse al motor de BD");
-
+		$conexion = conectarBD();
         $idUsuario = $conexion->real_escape_string($this->idUsuario);
         $palabra = $conexion->real_escape_string($this->palabra);
         $tiempo = $conexion->real_escape_string($this->tiempo);
@@ -83,7 +84,7 @@ class ranking {
     }
 
 	 public static function obtenerEstadisticas() {
-		$conexion = new mysqli("localhost", "root", "1234", "ahorcado") or die("No es posible conectarse al motor de BD");
+		$conexion = conectarBD();
 
 		// Consulta para obtener las estadísticas del usuario
 		$consulta = "SELECT u.nombre, r.palabra, r.tiempo 
@@ -111,7 +112,7 @@ class ranking {
 	
 	
 	   public static function obtenerEstadisticaPersonal($idUsuario) {
-		$conexion = new mysqli("localhost", "root", "1234", "ahorcado") or die("No es posible conectarse al motor de BD");
+		$conexion = conectarBD();
 
 		$idUsuario = $conexion->real_escape_string($idUsuario);
 
